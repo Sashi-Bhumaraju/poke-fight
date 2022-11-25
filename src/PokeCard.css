@@ -1,0 +1,48 @@
+.PokeCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 120px;
+    height: 120px;
+    box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+    border-radius: 5px;
+    background-color: white;
+    margin: 10px;
+}
+
+.PokeCard img {
+  position: relative;
+  aspect-ratio: 1/1;
+  width: 100px;
+  transition: ease-in 0.2s;
+}
+
+.PokeCard img:hover{
+    scale: 1.2;
+}
+
+.Pokemon-Content{
+   position: relative;
+   width: 120px;
+   align-items: flex-start;
+   display: flex;
+   flex-direction: column;
+   padding: 0px;
+}
+
+.Pokemon-Content .Heading{
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.Pokemon-Content .data{
+   
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+   
+}

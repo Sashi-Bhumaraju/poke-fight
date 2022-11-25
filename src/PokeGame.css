@@ -1,0 +1,101 @@
+.PokeGame{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.PokeGame-start{
+    width: 4.5px;
+    background-color: black;
+    height: 100vh;
+    margin: 90px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  
+}
+
+.PokeGame-start img{
+    /* aspect-ratio: 1/1; */
+    width: 70px;
+    height: 70px;
+    position: relative;
+    animation: mymove 5s infinite;
+    cursor: pointer;
+  }
+  .isWinner{
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    /* padding: 20px; */
+    width: 100px;
+    height: 100px;
+     aspect-ratio: 9/1;
+    /* box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56); */
+    border-radius: 5px;
+    background-color: white;
+    margin: 10px;
+    position: absolute;
+    z-index: -100;
+  
+}
+
+.isWinner:nth-child(1){
+  margin-right: 150px;
+  
+}
+
+.isWinner:nth-child(2){
+  margin-left: 150px;
+}
+@keyframes  mymove{
+    
+    0% {
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+      }
+      25% {
+        -webkit-transform: rotate3d(0, 0, 1, 90deg);
+        transform: rotate3d(0, 0, 1, 90deg);
+      }
+      50% {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg);
+        transform: rotate3d(0, 0, 1, 180deg);
+      }
+      75% {
+        -webkit-transform: rotate3d(0, 0, 1, 270deg);
+        transform: rotate3d(0, 0, 1, 270deg);
+      }
+      100% {
+        -webkit-transform: rotate3d(0, 0, 1, 360deg);
+        transform: rotate3d(0, 0, 1, 360deg);
+      }
+    }
+
+    @-ms-keyframes spin {
+        from { -ms-transform: rotate(0deg); }
+        to { -ms-transform: rotate(360deg); }
+    }
+    @-moz-keyframes spin {
+        from { -moz-transform: rotate(0deg); }
+        to { -moz-transform: rotate(360deg); }
+    }
+    @-webkit-keyframes spin {
+        from { -webkit-transform: rotate(0deg); }
+        to { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes spin {
+        from {
+            transform:rotate(0deg);
+        }
+        to {
+            transform:rotate(360deg);
+        }
+    }
