@@ -1,12 +1,10 @@
 import React from "react";
 import PokeDex from "./PokeDex";
 import pokeball from "./pokeball.png";
-import punch from './punch.svg'
 import fight from './fight.svg'
 import pichachu_song from './Pikachu.mp3'
 import './PokeGame.css'
 
-const POKEMON_API = "https://pokeapi.co/api/v2/pokemon?limit=";
 
 
 class PokeGame extends React.Component{   
@@ -16,7 +14,7 @@ class PokeGame extends React.Component{
             hand1 : [ ],
             hand2 : [ ]
         }
-     
+        // this.addEventListener = this.addEventListener.bind(this);
     }
 
     static defaultState = {
@@ -54,25 +52,26 @@ class PokeGame extends React.Component{
   
    winner  = (<div className="win"></div>)
 
-componentDidMount(){
-    document.addEventListener("keydown", function(event) {
-        console.log(event.which);
-       
-        if(event.key   === 'Enter') {
-            this.t.bind(this, 'GeeksForGeeks')
-        }})
-}
+    d = (e) =>{
+    console.log(e.which);
+  
+        if(e.keyCode === 13 )
+        {this.t()}
+
+        if(e.keyCode === 78 )
+        {this.t()}
+   }
   
     render(){
 
-      
+        document.addEventListener("keydown", this.d)
       
 
         
         let h1 = [];
         let h2 = [...this.props.pokemon];
            
-           let i = 0;
+          
            while(h1.length<h2.length){
                let randIdx =  Math.floor(Math.random()*h2.length);
                let r = h2.splice(randIdx,1)[0]
@@ -87,17 +86,27 @@ componentDidMount(){
            
              this.pow1 = this.state.hand1.reduce((sum,pokeman)=>sum + pokeman.base_experience,0)
              this.pow2 = this.state.hand2.reduce((sum,pokeman)=>sum + pokeman.base_experience,0)
-        
+            //  w=<div style={{color:"green"}}> win </div>
+            //  l=<div style={{color:"red"}}> lose </div>
         return(
+           
             <div className="PokeGame">
              
+             {/* <div className="rightthumb">  <img width={100}  src={tup}></img></div>
+             <div className="leftthumb"><img width={100}  src={tdown}></img></div> */}
                 
-              {this.state.hand1.length !=0 ? <PokeDex pokemon = {this.state.hand1} ></PokeDex>:null}
+              {this.state.hand1.length !==0 ? <PokeDex pokemon = {this.state.hand1} ></PokeDex>:null}
               <div className="PokeGame-start">
             
            
-              <div className="isWinner">{this.pow1}</div>
-              <div className="isWinner">{ this.pow2} </div>
+              <div className="isWinner"><div className="score">{this.pow1}</div>
+
+              <div className="win">{this.pow1 > this.pow2? <div style={{color:"#39FF14"}}> win </div> : <div style={{color:"#FF0000"}}> lose </div>}</div></div>
+
+              <div className="isWinner"><div className="score">{this.pow2}</div> 
+
+              <div className="win">{this.pow2 > this.pow1? <div style={{color:"#39FF14"}}> win </div> : <div style={{color:"#FF0000"}}> lose </div>}</div></div>
+             
            
                <img className="ball" src={pokeball} ></img>
                
@@ -106,7 +115,7 @@ componentDidMount(){
               
               </div>
              
-              {this.state.hand1.length !=0 ? <PokeDex pokemon = {this.state.hand2} ></PokeDex>:null}
+              {this.state.hand1.length !==0 ? <PokeDex pokemon = {this.state.hand2} ></PokeDex>:null}
 
             </div>
         )

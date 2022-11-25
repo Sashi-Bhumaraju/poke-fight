@@ -42,11 +42,45 @@
    bottom: 180px;
     width: 80px;
     height: 80px;
-    background-color: ;
+  
     filter: drop-shadow(3px 5px 2px black);
     
   }
 
+.win{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding: 20px; */
+  width: 180px;
+  
+   aspect-ratio: 4/1;
+  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+  /* border-radius: 5px; */
+  
+  /* background-color: rgba(255, 255, 255, 0.4); */
+  background-color: black;
+  /* margin: 10px; */
+ 
+  /* position: absolute; */
+  z-index: -100;
+  color: black;
+  font-size: 25px;
+  font-weight: 900;  
+  left: 0;
+  bottom: 0;
+}
+
+.win:nth-child(1){
+  left: 0;
+  bottom: 0;
+}
+
+.win:nth-child(2){
+  left: 0;
+  bottom: 0;
+}
   .punch .text{
     /* width: 20px;
     height: 20px; */
@@ -64,16 +98,26 @@
     height: 30px;
     box-shadow: 0px 0px 12px -5px white;
   }
-
+.score{
+ 
+  width: 180px;
+  
+  aspect-ratio: 4/1;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
   .isWinner{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     /* padding: 20px; */
-    width: 180px;
+  
     
-     aspect-ratio: 4/1;
+    
+    
     box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
     /* border-radius: 5px; */
     
@@ -84,7 +128,7 @@
     position: absolute;
     z-index: -100;
     color: black;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 900;  
 }
 
