@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/poke-fight/static/css/main.1274cbe7.css",
+    "main.js": "/poke-fight/static/js/main.6dfcd0c0.js",
+    "static/js/787.ab378faf.chunk.js": "/poke-fight/static/js/787.ab378faf.chunk.js",
+    "static/media/pokeball.png": "/poke-fight/static/media/pokeball.3379e6b6754b646f19ed.png",
+    "index.html": "/poke-fight/index.html",
+    "main.1274cbe7.css.map": "/poke-fight/static/css/main.1274cbe7.css.map",
+    "main.6dfcd0c0.js.map": "/poke-fight/static/js/main.6dfcd0c0.js.map",
+    "787.ab378faf.chunk.js.map": "/poke-fight/static/js/787.ab378faf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1274cbe7.css",
+    "static/js/main.6dfcd0c0.js"
+  ]
+}
