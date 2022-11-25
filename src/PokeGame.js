@@ -44,7 +44,7 @@ class PokeGame extends React.Component{
        t=()=>{
         this.playAudio();
         this.setState(prevState => ({
-                  }));   }    
+                  }));   }  
 
     playAudio=()=>{
     let song = new Audio(pichachu_song);
@@ -54,17 +54,19 @@ class PokeGame extends React.Component{
   
    winner  = (<div className="win"></div>)
 
-
+componentDidMount(){
+    document.addEventListener("keydown", function(event) {
+        console.log(event.which);
+       
+        if(event.key   === 'Enter') {
+            this.t.bind(this, 'GeeksForGeeks')
+        }})
+}
   
     render(){
 
       
-        document.addEventListener("keydown", function(event) {
-            console.log(event.which);
-           
-            if(event.key   === 'Enter') {
-                this.t();
-            }})
+      
 
         
         let h1 = [];
