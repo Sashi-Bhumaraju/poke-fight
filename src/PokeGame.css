@@ -20,40 +20,80 @@
   
 }
 
-.PokeGame-start img{
-    /* aspect-ratio: 1/1; */
-    width: 70px;
-    height: 70px;
-    position: relative;
-    animation: mymove 5s infinite;
-    cursor: pointer;
-  }
-  .isWinner{
 
-    /* display: flex;
+
+  .PokeGame-start .ball{
+    width: 70px;
+    animation: mymove 5s infinite;
+  }
+
+  .PokeGame-start .punch {
+    position: absolute;
+    bottom: 60px;
+    transition: ease-in 0.2s;
+    filter: drop-shadow(3px 5px 2px black);
+  }
+  .PokeGame-start .punch:hover {
+     scale: 1.1;
+  }
+
+  .fight{
+    position: absolute;
+   bottom: 180px;
+    width: 80px;
+    height: 80px;
+    background-color: ;
+    filter: drop-shadow(3px 5px 2px black);
+    
+  }
+
+  .punch .text{
+    /* width: 20px;
+    height: 20px; */
+    text-align: center;
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; */
-    /* padding: 20px; */
+    /* position: absolute; */
+    color: white;
+    font-weight: 900;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background-color: black;
     width: 100px;
-    height: 100px;
-     aspect-ratio: 9/1;
-    /* box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56); */
-    border-radius: 5px;
+    height: 30px;
+    box-shadow: 0px 0px 12px -5px white;
+  }
+
+  .isWinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 20px; */
+    width: 180px;
+    
+     aspect-ratio: 4/1;
+    box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+    /* border-radius: 5px; */
+    
+    /* background-color: rgba(255, 255, 255, 0.4); */
     background-color: white;
-    margin: 10px;
+    /* margin: 10px; */
+   
     position: absolute;
     z-index: -100;
-  
+    color: black;
+    font-size: 30px;
+    font-weight: 900;  
 }
 
 .isWinner:nth-child(1){
-  margin-right: 150px;
-  
+ left: 0;
 }
 
 .isWinner:nth-child(2){
-  margin-left: 150px;
+ right: 0;
 }
 @keyframes  mymove{
     

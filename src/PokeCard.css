@@ -1,17 +1,23 @@
 .PokeCard{
+   
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    width: 120px;
+    width: 100px;
     height: 120px;
     box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
     border-radius: 5px;
     background-color: white;
     margin: 10px;
+    animation: appear 0.2s linear;
 }
+@keyframes appear{
 
+    0%{opacity: 0; scale: 0.8; }
+    100% {opacity: 100; scale: 1;}
+}
 .PokeCard img {
   position: relative;
   aspect-ratio: 1/1;
@@ -45,4 +51,25 @@
     display: flex;
     justify-content: space-between;
    
+}
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
