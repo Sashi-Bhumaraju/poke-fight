@@ -183,3 +183,14 @@
             transform:rotate(360deg);
         }
     }
+
+    @media screen and (max-width: 480px) {
+      .PokeGame-start {
+        
+        margin: 10px;
+      }
+      .isWinner{
+        top: 0;
+      }
+
+    }

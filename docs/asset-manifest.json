@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/poke-fight/static/css/main.196cde95.css",
+    "main.css": "/poke-fight/static/css/main.6fbeb568.css",
     "main.js": "/poke-fight/static/js/main.6a0c91ed.js",
     "static/js/787.ab378faf.chunk.js": "/poke-fight/static/js/787.ab378faf.chunk.js",
     "static/media/pokeball.png": "/poke-fight/static/media/pokeball.3379e6b6754b646f19ed.png",
     "static/media/Pikachu.mp3": "/poke-fight/static/media/Pikachu.b06654bce9c5817cb8d5.mp3",
     "static/media/fight.svg": "/poke-fight/static/media/fight.41e2313faef3838628cbb79ca983ebb3.svg",
     "index.html": "/poke-fight/index.html",
-    "main.196cde95.css.map": "/poke-fight/static/css/main.196cde95.css.map",
+    "main.6fbeb568.css.map": "/poke-fight/static/css/main.6fbeb568.css.map",
     "main.6a0c91ed.js.map": "/poke-fight/static/js/main.6a0c91ed.js.map",
     "787.ab378faf.chunk.js.map": "/poke-fight/static/js/787.ab378faf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.196cde95.css",
+    "static/css/main.6fbeb568.css",
     "static/js/main.6a0c91ed.js"
   ]
 }
